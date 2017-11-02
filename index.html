@@ -2,10 +2,140 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Студия "Нёрдс"</title>
   </head>
   <body>
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-header-logo">
+  				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии nerds">
+  			</a>
+  		</nav>
+  		<ul class="site-navigation">
+  			<li><a href="index.html">Студия</a></li>
+  			<li><a href="#">Клиенты</a></li>
+  			<li><a href="catalog.html">Магазин</a></li>
+  			<li><a href="#">Контакты</a></li>
+  		</ul>
+  		<div class="header-cart">Корзина</div>
+  	</header>
+  	<main class="container">
 
+		<h1 class="visually-hidden">Студия "Нёрдс"</h1>
+
+		<section class="carousel">
+			<h2 class="visually-hidden">Как мы работаем?</h2>
+			<div class="slider">
+				<div class="slide slide1">
+					<p><b>Долго, дорого,<br>скрупулезно.</b></p>
+					<p>Математически выверенный дизайн<br>для вашего сайта и мобильного приложения.</p>
+					<a href="more.html" class="button">Узнать больше</a>
+				</div>
+				<div class="slide slide2">
+					<p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+				</div>
+				<div class="slide slide3">
+					<p><b>Только ночь,<br>только хардкор</b></p>
+					<p>Работаем днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+					<a href="more.html" class="button">Узнать больше</a>
+				</div>
+				<input type="radio" id="btn-1" checked>
+				<input type="radio" id="btn-2">
+			    <input type="radio" id="btn-3">
+				<div class="slider-controls">
+				  <label for="btn-1"></label>
+				  <label for="btn-2"></label>
+				  <label for="btn-3"></label>
+				</div>
+			</div>
+		</section>
+		<section class="advantages">
+			<h2 class="visually-hidden">Преимущества</h2>
+			<div class="flex-box">
+				<div class="box box-sites">
+					<h3>Веб-сайты</h3>
+					<p>Мир никогда не будет прежним<br>посе того как увидит ваш сайт!</p>
+					<a href="catalog.html" class="button button-order-red">Заказать</a>
+				</div>
+				<div class="box box-attachments">
+					<h3>Приложения</h3>
+					<p>Покорите топ-10 приложений в<br>AppStore и Google Play</p>
+					<a href="catalog.html" class="button button-order-green">Заказать</a>
+				</div>
+				<div class="box box-presentations">
+					<h3>Презентации</h3>
+					<p>Вы даже не подозреваете,<br>насколько вы изумительны!</p>
+					<a href="catalog.html" class="button button-order-yellow">Заказать</a>
+				</div>
+			</div>
+		</section>
+		<section class="studio">
+			<h2 class="visually-hidden">О студии "Нёрдс"</h2>
+			<div class="obout-us">
+				<p><span>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</span></p>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<h3>Выполняем заказы на разработку:</h3>
+				<ul>
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для IOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="progress">
+				<table class="progress-table">
+					<caption>С 2004 года любим точночть во всем:</caption>
+					<tr class="row">
+						<td class="percent">146%</td>
+						<td class="percent">100%</td>
+						<td class="percent">50%</td>
+					</tr>
+					<tr class="row">
+						<td class="title">Уровень самоотдачи</td>
+						<td class="title">Соблюдение сроков</td>
+						<td class="title">Минимальная предоплата</td>
+					</tr>
+				</table>
+			</div>
+			<hr>
+			<div class="partners">
+				<a href="https://htmlacademy.ru/" class="htmlacademy">
+					<img src="img/logo-1.png" width="199" height="68" alt="Логотип htmlacademy">
+				</a>
+				<a href="#" class="borodinski">
+					<img src="img/logo-2.png" width="209" height="87" alt="Логотип borodinski">
+				</a>
+				<a href="#" class="pink">
+					<img src="img/logo-3.png" width="185" height="52" alt="Логотип pink">
+				</a>
+				<a href="#" class="mishka">
+					<img src="img/logo-4.png" width="173" height="84" alt="Логотип mishka">
+				</a>
+			</div>
+			<hr>
+		</section>
+		<section class="contacts">
+			<h2 class="visually-hidden">Наши контакты</h2>
+			<div class="contacts-card">
+				<p><span>Nёrds design studio</span><br>
+				191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8 <br><br>тел. +7 (812) 275-75-75
+				</p>
+				<a class="button contacts-button" href="email.html">Напишите нам</a>
+			</div>
+			<img src="img/map-marker.png" alt="map-marker" class="map-marker">
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="footer-social">
+	        <ul>
+	          <li><a class="social-button" href="#">Вконтакте</a></li>
+	          <li><a class="social-button" href="#">Фейсбук</a></li>
+	          <li><a class="social-button" href="#">Инстаграм</a></li>
+	        </ul>
+	        <b>Давайте дружить, это выгодно!</b>
+	        <p>Скидка 10% для друзей из социальных сетей.</p>
+    	</div>
+	</footer>
+	
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
 
   </body>
