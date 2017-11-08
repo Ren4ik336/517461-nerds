@@ -1,6 +1,8 @@
+
 body{
 	font-family: 'Roboto', sans-serif;
 }
+/* Стилизуем шапку сайта */
 .main-header{
 	background-color: #eeeeee;
 }
@@ -62,10 +64,13 @@ body{
 .header-cart a:active{
 	color: rgba(0, 0, 0, 0.3);
 }
+/* Конец стилизации шапки сайта */
+/*  Центрируем контейнер*/
 .container{
 	width: 1200px;
 	margin: 0 auto;
 }
+  /* Скрываем заголовки которые не нужны  */
 .visually-hidden{
 	visibility: hidden;
 }
@@ -182,9 +187,8 @@ body{
 
  border: 1px solid silver;
 }
-
 	/* конец слайдера */
-
+/* Стилизуем раздел предложений */
 .flex-box{
 	margin-top: -47px;
 	padding-left: 20px;
@@ -252,6 +256,8 @@ hr{
 	background-color: #e5a722;
 	color: rgba(255, 255, 255, 0.3);
 }
+/* Конец стилизации раздела предложений */
+/* Стилизуем раздел информации о студии */
 .studio hr{
 	margin-top: 58px;
 }
@@ -363,6 +369,8 @@ hr{
 .partners a:active{
 	opacity: 0.1;	
 }
+/* Конец стилизации раздела о студии */
+/* Стилизуем раздел контакты */
 .contacts{
 	background: url(../img/contacts.jpg);
 	background-size: cover;
@@ -394,6 +402,8 @@ hr{
 	display: inline-block;
 	padding: 16px 45px;
 }
+/* Конец стилизации раздела контакты */
+/* Стилизуем футер сайта */
 .main-footer{
 	width: 1200px;
 	height: 140px;
@@ -450,6 +460,7 @@ hr{
 	font-weight: 700;
 	color: black;
 }
+/* Конец стилизации футера */
 /*    Стилизуем раздел каталог    */
 .header__title{
 	text-align: center;
@@ -510,4 +521,9 @@ hr{
 }
 .catalog-link:hover  .item-info{
 	transform: scale(1);
+}
+
+.catalog-item:hover .item-info{
+	cursor: pointer;
+transform: scale(1);
 }
