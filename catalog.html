@@ -2,29 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Магазин</title>
   </head>
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
   			<a href="index.html" class="main-header-logo">
-  				<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии nerds">
+  				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии nerds">
   			</a>
+	  		<ul class="site-navigation">
+	  			<li><a href="index.html">Студия</a></li>
+	  			<li><a href="#">Клиенты</a></li>
+	  			<li><a class="current" href="catalog.html">Магазин</a></li>
+	  			<li><a href="#">Контакты</a></li>
+	  		</ul>
+	  		<div class="header-cart">Корзина</div>
+	  		<h1 class="header__title">Магазин готовых шаблонов</h1>
   		</nav>
-  		<ul class="site-navigation">
-  			<li><a href="index.html">Студия</a></li>
-  			<li><a href="#">Клиенты</a></li>
-  			<li><a href="catalog.html">Магазин</a></li>
-  			<li><a href="#">Контакты</a></li>
-  		</ul>
-  		<div class="header-cart">Корзина</div>
-  		<h1 class="header__title">Магазин готовых шаблонов</h1>
   	</header>
   	<main class="container">
 
 		<section class="filter">
 			<h2 class="visually-hidden">Фильтр услуг</h2>
 			<!-- Здесь будет форма -->
+			<input type="range" min="0" max="100" step="1" value="50">
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Каталог сайтов, приложений и призентаций.</h2>
@@ -115,28 +119,29 @@
 	          <li class="pagination-item"><a href="#">Следующая</a></li>
         	</ul>
 		</section>
-		<section class="contacts">
+
+	</main>
+	<section class="contacts">
+		<div class="container">
 			<h2 class="visually-hidden">Наши контакты</h2>
 			<div class="contacts-card">	
-				<p><span>Nёrds design studio</span></p>
-				<p>191186, Санкт-Петербург,</p>
-				<p>ул. Б. Конюшенная, д. 19/8</p>
-				<br>
+				<h3>Nёrds design studio</h3>
+				<p>191186, Санкт-Петербург,
+				ул. Б. Конюшенная, д. 19/8</p>	
 				<p>тел. +7 (812) 275-75-75</p>
 				<a class="button contacts-button" href="email.html">Напишите нам</a>
 			</div>
-			<img src="img/map-marker.png" width="231" height="190" alt="map-marker" class="map-marker">
+		</div>
 		</section>
-	</main>
 	<footer class="main-footer">
 		<div class="footer-social">
 	        <ul>
-	          <li><a class="social-button" href="#">Вконтакте</a></li>
-	          <li><a class="social-button" href="#">Фейсбук</a></li>
-	          <li><a class="social-button" href="#">Инстаграм</a></li>
+	          <li class="social-vk"><a class="social-button" href="#">Вконтакте</a></li>
+	          <li class="social-fb"><a class="social-button" href="#">Фейсбук</a></li>
+	          <li class="social-insta"><a class="social-button" href="#">Инстаграм</a></li>
 	        </ul>
-	        <b>Давайте дружить, это выгодно!</b>
-	        <p>Скидка 10% для друзей из социальных сетей.</p>
+	        <p><span>Давайте дружить, это выгодно!</span><br>
+	        Скидка 10% для друзей из социальных сетей.</p>
     	</div>
 	</footer>
 	
