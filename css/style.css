@@ -60,7 +60,7 @@ body{
 	color: #e74246;
 }
 .header-cart a:active{
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 .container{
 	width: 1200px;
@@ -331,7 +331,28 @@ hr{
 	display: inline-block;
 	margin-left: -70px;
 	padding: 40px 0 0 0;
-
+	position: relative;
+}
+.partners .line-1{
+	border-right: 2px solid #eeeeee;
+	height: 50px;
+	position: absolute;
+	top: 50px;
+	left: -50px;
+}
+.partners .line-2{
+	border-right: 2px solid #eeeeee;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+	left: -59px;
+}
+.partners .line-3{
+	border-right: 2px solid #eeeeee;
+	height: 50px;
+	position: absolute;
+	top: 50px;
+	left: -42px;
 }
 .partners a{
 	opacity: 0.2;	
@@ -354,8 +375,8 @@ hr{
 	height: 270px;
 	padding-top: 37px;
 	padding-left: 50px;
-	margin-left: 33px;
-	margin-top: 28px;
+	margin-left: 20px;
+	margin-top: 26px;
 }
 .contacts-card h3{
 	text-transform: uppercase;
@@ -369,7 +390,7 @@ hr{
 	margin-right: 60px;
 }
 .contacts-button{
-	margin-top: 20px;
+	margin-top: 22px;
 	display: inline-block;
 	padding: 16px 45px;
 }
@@ -379,7 +400,8 @@ hr{
 	margin: 0 auto;
 }
 .footer-social ul{
-	margin-top: 70px;
+	margin: 70px 0 0 -16px;
+
 }
 .footer-social li{
 	display: inline-block;
@@ -418,7 +440,7 @@ hr{
 	visibility: hidden;
 }
 .footer-social p{
-	margin: -96px 0 0 433px;
+	margin: -81px 0 0 422px;
 	font-size: 16px;
 	color: #444444;
 	line-height: 1.4;
@@ -429,3 +451,63 @@ hr{
 	color: black;
 }
 /*    Стилизуем раздел каталог    */
+.header__title{
+	text-align: center;
+	font-size: 55px;
+	font-weight: 500;
+	margin: 0;
+	padding: 70px 0 103px 0;
+}
+.filter{
+	display: inline-block;
+	width: 310px;
+	vertical-align: top;
+}
+.catalog{
+	display: inline-block;
+	width: 880px;
+}
+.catalog-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.catalog-item{
+	display: inline-block;
+	position: relative;
+}
+.catalog-item-decoration{
+	background: url(../img/browser.svg) no-repeat;
+	height: 40px;
+	width: 360px;
+	opacity: 0.3;
+}
+.catalog-link{
+	color: #666666;
+}
+.catalog-link h3{
+	color: black;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 35px
+}
+.button-buy{
+	border: none;
+	margin: 10px 0 50px 0;
+}
+.catalog-link:hover .catalog-item-decoration{
+	opacity: 1;
+}
+.item-info{
+	width: 360px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: scale(0);
+	transition: .4s;
+	background-color: #eeeeee;
+}
+.catalog-link:hover  .item-info{
+	transform: scale(1);
+}
