@@ -28,6 +28,37 @@
 		<section class="filter">
 			<h2 class="visually-hidden">Фильтр услуг</h2>
 			<!-- Здесь будет форма --> 
+			<form class="filter-servises" method="post">
+				<p>Стоимость:</p>
+				<input type="range" min="0" max="15000" step="1" value="0">
+				<div id="slider-range"></div>
+				<span>от</span><output for="range" name="range-1" id="value-1">0</output>
+				<span>до</span><output for="range" name="range-2" id="value-2">15000</output>
+
+				<p>Сетка:</p>
+				<input type="radio" name="grid" id="filter-grid">
+				<label for="filter-grid">адаптивная</label>
+
+				<input type="radio" name="grid" id="filter-grid-2">
+				<label for="filter-grid-2">Фиксировнная</label>
+				<p>Резиновая</p>
+
+				<p>Особенности:</p>
+				<input type="checkbox" name="slider" id="filter-slider">
+				<label for="filter-slider">Слайдер</label>
+
+				<input type="checkbox" name="box-adventeges" id="filter-box-adventeges">
+				<label for="filter-box-adventeges">Блок преимуществ</label>
+
+				<input type="checkbox" name="news" id="filter-news">
+				<label for="filter-news">Новости</label>
+
+				<input type="checkbox" name="gallery" id="filter-gallery">
+				<label for="filter-gallery">Галерея</label>
+
+				<input type="checkbox" name="basket" id="filter-basket"><label for="filter-basket">Корзина</label>
+
+			</form>
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Каталог сайтов, приложений и призентаций.</h2>
@@ -135,6 +166,7 @@
 	        Скидка 10% для друзей из социальных сетей.</p>
     	</div>
 	</footer>
+
 	
   </body>
 </html>
