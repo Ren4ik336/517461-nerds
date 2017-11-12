@@ -5,6 +5,7 @@ body{
 /* Стилизуем шапку сайта */
 .main-header{
 	background-color: #eeeeee;
+	min-width: 1240px;
 }
 .main-navigation{
 	width: 1200px;
@@ -371,6 +372,7 @@ hr{
 	background-size: cover;
 	height: 416px;
 	margin-top: 80px;
+	min-width: 1250px;
 }
 .contacts-card{
 	background-color: #ffffff;
