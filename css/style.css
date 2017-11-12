@@ -471,21 +471,23 @@ hr{
 }
 .filter{
 	display: inline-block;
-	width: 310px;
+	width: 370px;
 	vertical-align: top;
 }
 .catalog{
 	display: inline-block;
-	width: 880px;
+	width: 800px;
 }
 .catalog-list{
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 27px;
+	word-spacing: 37px;
 }
 .catalog-item{
 	display: inline-block;
 	position: relative;
+	padding: 0 0 37px 0;
 }
 .catalog-item-decoration{
 	background: url(../img/browser.svg) no-repeat;
@@ -525,5 +527,77 @@ hr{
 
 .catalog-item:hover .item-info{
 	cursor: pointer;
-transform: scale(1);
+	transform: scale(1);
+}
+/* Стилизуем фильтр */
+.filter{
+	padding-left: 20px
+}
+.filter-servises p{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+}
+label{
+	display: block;
+	margin-bottom: 10px;
+}
+input[type="radio"]{
+	display: none;
+	position: relative;
+
+}
+.radio{
+	background: url(../img/radio-off.svg) no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	opacity: 0.6;
+
+}
+.radio:hover{
+	opacity: 1;
+}
+.radio:before{
+	content: '';
+	background: url(../img/radio-on.svg) no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	transform: scale(0);
+}
+input:checked + .radio:before{
+	transform: scale(1);
+}
+label span{
+	display: inline-block;
+	margin-left: 40px;
+	color: #283136;
+	font-size: 16px;
+	line-height: 2;
+}
+/* Стилизуем чекбоксы */
+input[type="checkbox"]{
+	display: none;
+}
+.checkbox{
+	background: url(../img/checkbox-off.svg) no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	opacity: 0.6;
+}
+.checkbox:hover{
+	opacity: 1;
+}
+.checkbox:before{
+	content: '';
+	background: url(../img/checkbox-on.svg) no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	transform: scale(0);
+}
+input:checked + .checkbox:before{
+	transform: scale(1);
 }
