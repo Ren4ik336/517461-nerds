@@ -74,6 +74,7 @@ body{
   /* Скрываем заголовки которые не нужны  */
 .visually-hidden{
 	visibility: hidden;
+	margin: 0;
 }
 /* Стилизуем слайдер */
 .carousel {
@@ -161,7 +162,6 @@ body{
 }
 .carousel label:after {
 	position: absolute;
-	border: 2px solid #ddd;
 	content: " ";
 	height: 4px;
 	width: 4px;
@@ -180,11 +180,14 @@ body{
 #slide1:checked ~ .controls label:nth-of-type(1):after,
 #slide2:checked ~ .controls label:nth-of-type(2):after,
 #slide3:checked ~ .controls label:nth-of-type(3):after {
-opacity: 1;
- border: 1px solid silver;
+ 	opacity: 1;
+ 	border: 1px solid silver;
 }
 	/* конец слайдера */
 /* Стилизуем раздел предложений */
+.advantages{
+	margin-top: 63px;
+}
 .flex-box{
 	margin-top: -47px;
 	padding-left: 20px;
@@ -254,6 +257,9 @@ hr{
 }
 /* Конец стилизации раздела предложений */
 /* Стилизуем раздел информации о студии */
+.studio{
+	margin-top: 40px;
+}
 .studio hr{
 	margin-top: 58px;
 }
@@ -478,8 +484,8 @@ hr{
 .catalog-list{
 	list-style: none;
 	margin: 0;
-	padding: 0 0 0 27px;
-	word-spacing: 37px;
+	padding: 0 0 0 40px;
+	word-spacing: 36px;
 }
 .catalog-item{
 	display: inline-block;
@@ -528,17 +534,23 @@ hr{
 }
 /* Стилизуем фильтр */
 .filter{
-	padding-left: 20px
+	padding-left: 7px
 }
-.filter-servises p{
+legend{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 18px;
 }
+fieldset{
+	border: none;
+	margin-top: 32px;
+}
 label{
 	display: block;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
+
 input[type="radio"]{
 	display: none;
 	position: relative;
@@ -572,7 +584,9 @@ label span{
 	color: #283136;
 	font-size: 16px;
 	line-height: 2;
+	opacity: 0.9;
 }
+
 /* Стилизуем чекбоксы */
 input[type="checkbox"]{
 	display: none;
@@ -597,4 +611,39 @@ input[type="checkbox"]{
 }
 input:checked + .checkbox:before{
 	transform: scale(1);
+}
+/* Стилизуем фильтр сортировки */
+.catalog fieldset{
+	position: relative;
+}
+.catalog legend{
+	margin-left: 25px;
+}
+.catalog .btn{
+	position: absolute;
+	border: none;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+.catalog .filter-button-1{
+	top: 0;
+	right: 290px;
+}
+.catalog .filter-button-2{
+	top: 0;
+	right: 208px;
+}
+.catalog .filter-button-3{
+	top: 0;
+	right: 80px;
+}
+.catalog .filter-button-down{
+	top: 5px;
+	right: 28px;
+}
+.catalog .filter-button-up{
+	top: 5px;
+	right: 0px;
 }
