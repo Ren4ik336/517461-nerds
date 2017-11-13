@@ -613,37 +613,33 @@ input:checked + .checkbox:before{
 	transform: scale(1);
 }
 /* Стилизуем фильтр сортировки */
-.catalog fieldset{
-	position: relative;
-}
-.catalog legend{
-	margin-left: 25px;
-}
-.catalog .btn{
-	position: absolute;
-	border: none;
-	background-color: #ffffff;
+.sorting p{
 	text-transform: uppercase;
+	font-size: 18px;
+	display: inline-block;
+}
+.sorting ul{
+	display: inline-block;
+	list-style: none;
+}
+.sorting li{
+	display: inline-block;
+}
+.sorting a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
 	font-size: 14px;
-	cursor: pointer;
 }
-.catalog .filter-button-1{
-	top: 0;
-	right: 290px;
+.sorting-buttons a:nth-child(1){
+	background: url(../img/icon-down-dir.svg) no-repeat ;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
 }
-.catalog .filter-button-2{
-	top: 0;
-	right: 208px;
-}
-.catalog .filter-button-3{
-	top: 0;
-	right: 80px;
-}
-.catalog .filter-button-down{
-	top: 5px;
-	right: 28px;
-}
-.catalog .filter-button-up{
-	top: 5px;
-	right: 0px;
+.sorting-buttons a:nth-child(2){
+	background: url(../img/icon-up-dir.svg) no-repeat ;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
 }
