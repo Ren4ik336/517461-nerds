@@ -13,6 +13,7 @@ body{
 }
 .main-header-logo{
 	display: inline-block;
+	vertical-align: top;
 	margin: 50px 0 0 20px;
 }
 .site-navigation{
@@ -74,7 +75,12 @@ body{
   /* Скрываем заголовки которые не нужны  */
 .visually-hidden{
 	visibility: hidden;
-	margin: 0;
+	margin: -1px;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+
 }
 /* Стилизуем слайдер */
 .carousel {
@@ -153,6 +159,7 @@ body{
 .carousel label {
 	cursor: pointer;
 	display: inline-block;
+	vertical-align: top;
 	height: 18px;
 	width: 18px;
 	background-color: #fff;
@@ -186,7 +193,7 @@ body{
 	/* конец слайдера */
 /* Стилизуем раздел предложений */
 .advantages{
-	margin-top: 63px;
+	margin-top: 125px;
 }
 .flex-box{
 	margin-top: -47px;
@@ -258,7 +265,7 @@ hr{
 /* Конец стилизации раздела предложений */
 /* Стилизуем раздел информации о студии */
 .studio{
-	margin-top: 40px;
+	margin-top: 68px;
 }
 .studio hr{
 	margin-top: 58px;
@@ -268,6 +275,7 @@ hr{
 }
 .about-us{
 	display: inline-block;
+	vertical-align: top;
 	margin: -15px 0;
 	padding: 0;
 }
@@ -304,8 +312,9 @@ hr{
 	width: 360px;
 	height: 208px;
 	display: inline-block;
+	vertical-align: top;
 	padding: 198px 0 0 150px;
-	margin-top: -100px;
+	margin-top: -27px;
 }
 .progress-table{
 	margin-top: 120px;
@@ -337,6 +346,7 @@ hr{
 }
 .partners li{
 	display: inline-block;
+	vertical-align: top;
 	margin-left: -70px;
 	padding: 40px 0 0 0;
 	position: relative;
@@ -376,8 +386,9 @@ hr{
 .contacts{
 	background: url(../img/contacts.jpg);
 	background-size: cover;
-	height: 416px;
+	height: 386px;
 	margin-top: 80px;
+	padding-top: 30px; 
 	min-width: 1250px;
 }
 .contacts-card{
@@ -403,6 +414,7 @@ hr{
 .contacts-button{
 	margin-top: 22px;
 	display: inline-block;
+	vertical-align: top;
 	padding: 16px 45px;
 }
 /* Конец стилизации раздела контакты */
@@ -418,6 +430,7 @@ hr{
 }
 .footer-social li{
 	display: inline-block;
+	vertical-align: top;
 	width: 79px;
 	height: 79px;
 	background-color: #e1e1e1;
@@ -479,6 +492,7 @@ hr{
 }
 .catalog{
 	display: inline-block;
+	vertical-align: top;
 	width: 800px;
 }
 .catalog-list{
@@ -580,6 +594,7 @@ input:checked + .radio:before{
 }
 label span{
 	display: inline-block;
+	vertical-align: top;
 	margin-left: 40px;
 	color: #283136;
 	font-size: 16px;
@@ -617,13 +632,25 @@ input:checked + .checkbox:before{
 	text-transform: uppercase;
 	font-size: 18px;
 	display: inline-block;
+	vertical-align: top;
+	margin-top: 57px;
+	margin-left: 36px;
 }
 .sorting ul{
 	display: inline-block;
+	vertical-align: top;
 	list-style: none;
+	padding: 0;
+}
+.sorting-items{
+	margin: 59px 0 0 265px;
+}
+.sorting-items li{
+	padding-right: 20px;
 }
 .sorting li{
 	display: inline-block;
+	vertical-align: top;
 }
 .sorting a{
 	text-transform: uppercase;
@@ -631,15 +658,22 @@ input:checked + .checkbox:before{
 	color: black;
 	font-size: 14px;
 }
-.sorting-buttons a:nth-child(1){
+.sorting-buttons{
+	padding: 0;
+	margin: 63px 0 0 26px;
+}
+.sorting-buttons li:first-child a{
 	background: url(../img/icon-down-dir.svg) no-repeat ;
 	display: inline-block;
+	vertical-align: top;
+	padding-right: 15px;
 	width: 10px;
 	height: 10px;
 }
-.sorting-buttons a:nth-child(2){
+.sorting-buttons li:last-child a{
 	background: url(../img/icon-up-dir.svg) no-repeat ;
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	vertical-align: top;
+	width: 11px;
+	height: 10px;
 }
