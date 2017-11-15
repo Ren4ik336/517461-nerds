@@ -391,6 +391,7 @@ hr{
 	padding-left: 50px;
 	margin-left: 20px;
 	margin-top: 26px;
+	z-index: 1;
 }
 .contacts-card h3{
 	text-transform: uppercase;
@@ -671,4 +672,58 @@ input:checked + .checkbox:before{
 	vertical-align: top;
 	width: 11px;
 	height: 10px;
+}
+/* Стилизуем попап */
+.write-us-hidden{
+	width: 960px;
+	height: 590px;
+	box-shadow: 0 10px 40px 0px #888888;
+	background-color: #ffffff;
+	z-index: 100;
+	margin: 0 auto;
+	position: relative;
+}
+.write-us-hidden h3{
+	font-size: 45px;
+	font-weight: 500;
+	padding: 74px 0 0px 100px;
+}
+.write-us-hidden span{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+.form-write-us{
+	margin-left: 100px;
+}
+.form-write-us label{
+	font-weight: 700;
+}
+.form-write-us input{
+	width: 350px;
+	height: 50px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.5);
+	padding-left: 10px;
+}
+.form-write-us p{
+	display: inline-block;
+}
+.form-write-us p+p{
+	margin-left: 40px;
+}
+.form-write-us textarea{
+	width: 758px;
+	height: 110px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	resize: none;
+	color: rgba(0, 0, 0, 0.5);
+	padding: 10px 0 0 10px;
+	margin: 0;
+}
+.button-submit{
+	width: 260px;
+	height: 50px;
+	border: none;
+	margin-top: 40px;
 }
