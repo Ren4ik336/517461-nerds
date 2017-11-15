@@ -29,14 +29,14 @@
 			<h2 class="visually-hidden">Фильтр услуг</h2>
 			<!-- Здесь будет форма --> 
 			<form class="filter-servises" method="post">
-				<fieldset>
+				<fieldset class="filter-slider">
 					<legend>Стоимость:</legend>
 					<input type="range" min="0" max="15000" step="1" value="0">
 					<div id="slider-range"></div>
 					<span>от</span><output for="range" name="range-1" id="value-1">0</output>
 					<span>до</span><output for="range" name="range-2" id="value-2">15000</output>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-grid">
 					<legend>Сетка:</legend>
 					
 					<label for="filter-grid"><input type="radio" name="grid" id="filter-grid" checked>
@@ -47,7 +47,7 @@
 					<br>
 				</fieldset>
 				<fieldset>
-					<legend>Особенности:</legend>
+					<legend class="filter-properties">Особенности:</legend>
 					<label for="filter-slider"><input type="checkbox" name="slider" id="filter-slider" checked><i class="checkbox"></i>
 					<span>Слайдер</span></label>
 
@@ -153,7 +153,7 @@
 	          <li class="pagination-item pagination-item-current"><a>1</a></li>
 	          <li class="pagination-item"><a href="#">2</a></li>
 	          <li class="pagination-item"><a href="#">3</a></li>
-	          <li class="pagination-item"><a href="#">Следующая</a></li>
+	          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
         	</ul>
 		</section>
 

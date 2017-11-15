@@ -252,6 +252,9 @@ hr{
 	margin: 0;
 	padding: 0;
 }
+.studio hr~hr{
+	margin-bottom: 81px; 
+}
 .studio{
 	margin-left: 20px;
 	margin: 73px 0 0 0;
@@ -332,10 +335,9 @@ hr{
 	justify-content: space-around;
 	align-items: center;
 	position: relative;
-}
-.partners{
 	margin: 10px 0 35px 0;
 }
+
 .partners li{
 	display: inline-block;
 	vertical-align: top;
@@ -379,7 +381,7 @@ hr{
 	background: url(../img/contacts.jpg);
 	background-size: cover;
 	height: 386px;
-	margin-top: 81px;
+	
 	padding-top: 30px; 
 	min-width: 1250px;
 }
@@ -493,12 +495,12 @@ hr{
 	margin: 0;
 	padding: 0 0 0 40px;
 	word-spacing: 36px;
-	margin-top: 38px;
+	margin-top: 36px;
 }
 .catalog-item{
 	display: inline-block;
 	position: relative;
-	margin: 0 0 30px 0;
+	margin: 0 0 26px 0;
 }
 .catalog-item-decoration{
 	background: url(../img/browser.svg) no-repeat;
@@ -673,6 +675,27 @@ input:checked + .checkbox:before{
 	width: 11px;
 	height: 10px;
 }
+/* Стилизуем ползунок */
+.filter-slider{
+	text-transform: uppercase;
+}
+.filter-slider input{
+	width: 260px;
+	height: 80px;
+	background-color: #eeeeee;
+	margin: 45px 0 22px 0;
+}
+.filter-slider output{
+	background-color: #eeeeee;
+	padding: 10px 35px;
+	border-radius: 3px;
+	margin: 0 30px 0 10px;
+}
+.filter-slider output~output{
+	background-color: #eeeeee;
+	padding: 10px 20px;
+	margin: 0 10px;
+}
 /* Стилизуем попап */
 .write-us-hidden{
 	width: 960px;
@@ -719,11 +742,38 @@ input:checked + .checkbox:before{
 	resize: none;
 	color: rgba(0, 0, 0, 0.5);
 	padding: 10px 0 0 10px;
-	margin: 0;
+	margin: 0 0 50px 0;
 }
 .button-submit{
 	width: 260px;
 	height: 50px;
 	border: none;
-	margin-top: 40px;
+	margin-top: 50px;
+}
+/* Стилизуем пагинацию */
+.pagination-list{
+	margin: 40px 0 72px 40px;
+	padding: 0;
+}
+.pagination-item{
+	display: inline-block;
+	vertical-align: top;
+}
+.pagination-item a{
+	padding: 15px 20px;
+	cursor: pointer;
+	background-color: #eeeeee;
+	border-radius: 5px;
+	color: #000000;
+	font-weight: 500;
+	margin-right: 7px;
+}
+.pagination-item-current a{
+	background-color: #ffffff;
+	border: 4px solid #eeeeee;
+	padding: 11px 16px;
+	border-radius: 3px;
+}
+.pagination-item-next a{
+	padding: 15px 80px;
 }
