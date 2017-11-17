@@ -752,6 +752,7 @@ input[type=range]::-ms-thumb{
 	height: 25px;
 	cursor: pointer;
 }
+
 /* Стилизуем попап */
 .write-us-hidden{
 	width: 960px;
@@ -761,6 +762,15 @@ input[type=range]::-ms-thumb{
 	z-index: 100;
 	margin: 0 auto;
 	position: relative;
+	display: none;
+	position: fixed;
+	top: 200px;
+	left: 200px;
+}
+.modal-close{
+	background: url(../img/close-cross.svg) no-repeat;
+	width: 30px;
+	height: 30px;
 }
 .write-us-hidden h3{
 	font-size: 45px;
