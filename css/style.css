@@ -759,17 +759,18 @@ input[type=range]::-ms-thumb{
 	height: 590px;
 	box-shadow: 0 10px 40px 0px #888888;
 	background-color: #ffffff;
+	z-index: 100;
 	margin: 0 auto;
 	position: relative;
-	top: -1000px;
-	display: block;
-	left: 0px;
-	opacity: 0;
+	display: none;
+	position: fixed;
+	top: 200px;
+	left: 200px;	
 }
 .active{
-	transform: translateY(0%);
-	opacity: 1; 
-	transition: 0.6s all ease;
+	transform: scale(1);
+	transition: 2s;
+	display: block;
 }
 .modal-close{
 	background: url(../img/close-cross.svg) no-repeat;
@@ -820,7 +821,6 @@ input[type=range]::-ms-thumb{
 	border: none;
 	margin-top: 50px;
 }
-
 /* Стилизуем пагинацию */
 .pagination-list{
 	margin: 40px 0 72px 40px;

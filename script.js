@@ -5,15 +5,16 @@ if (element) {
     
     // TODO: Attaching sample click listener. Remove it.
    element.addEventListener('click', function () {
-    	//active.classList.add("active");
-       document.getElementById('modal').style.display='block';
-        
+    	active.classList.add("active");
+       //document.getElementById('modal').style.display='block';
+      
     }, false);
   
     
 }
 if (close) {
 	   close.addEventListener('click', function (){
-     	document.getElementById('modal').style.display='none';
+     	//document.getElementById('modal').style.display='none';
+     	active.classList.remove("active");
      }, false);
 }
