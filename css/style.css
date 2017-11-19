@@ -764,13 +764,20 @@ input[type=range]::-ms-thumb{
 	position: relative;
 	display: none;
 	position: fixed;
-	top: 200px;
-	left: 200px;	
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+
 }
 .active{
-	transform: scale(1);
-	transition: 2s;
 	display: block;
+	animation: mymove .3s;
+}
+@keyframes mymove {
+    0%   {top: -500px;}
+    50% {top: 200px;}
+    100% {top: 0px;}
 }
 .modal-close{
 	background: url(../img/close-cross.svg) no-repeat;
