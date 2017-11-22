@@ -20,7 +20,7 @@
 	  			<li><a href="#">Контакты</a></li>
 	  		</ul>
 	  		<div class="header-cart"><a href="#">Корзина</a></div>
-	  		<h1 class="header__title">Магазин готовых шаблонов</h1>
+	  		<h1 class="header-title">Магазин готовых шаблонов</h1>
   		</nav>
   	</header>
   	<main class="container">
@@ -166,7 +166,7 @@
 				<p>191186, Санкт-Петербург,
 				ул. Б. Конюшенная, д. 19/8</p>	
 				<p>тел. +7 (812) 275-75-75</p>
-				<a class="button contacts-button" href="email.html">Напишите нам</a>
+				<a class="button contacts-button" href="#modal">Напишите нам</a>
 			</div>
 		</div>
 		</section>
@@ -181,7 +181,21 @@
 	        Скидка 10% для друзей из социальных сетей.</p>
     	</div>
 	</footer>
-
-	
+	<div class="container">
+		<section class="write-us-hidden" id="modal">
+			<h3>Напишите нам</h3>
+			<a href="#modal" ><span class="modal-close"></span></a>
+			<form class="form-write-us">
+				<p><label for="name">Ваше имя:</label>
+				<input type="text" id="name" class="write-name" name="name" placeholder="Представтесь, пожалуйста"></p>
+				<p><label for="email">Ваш e-mail:</label>
+				<input type="text" id="email" class="write-email" name="email" placeholder="Для отправки ответа"></p>
+				<label for="message">Текст письма:</label>
+				<textarea name="message" id="message" class="write-message" cols="30" rows="10">В свободной форме</textarea>
+				<a href="#" class="button button-submit">Отправить</a>
+			</form>
+		</section>
+	</div>
+	<script src="script.js"></script>
   </body>
 </html>

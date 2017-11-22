@@ -3,13 +3,11 @@ body{
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
+	/* background: url(../img/nerds-index.jpg); */
 }
 a{
 	text-decoration: none;
 	text-transform: uppercase;
-}
-ul{
-	list-style: none;
 }
 .visually-hidden{
 	visibility: hidden;
@@ -25,23 +23,22 @@ ul{
 }
 .main-header{
 	background-color: #eeeeee;
-	min-width: 1240px;
-}
+	min-width: 1250px;
+} 
 .main-navigation{
 	width: 1200px;
 	margin: 0 auto;
-}
-.main-header-logo{
-	display: inline-block;
-	vertical-align: top;
-	margin: 50px 0 0 20px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .site-navigation{
+	list-style: none;
 	display: inline-flex;
 	justify-content: space-between;
 	width: 440px;
 	padding: 0;
-	margin: 79px 0 0 198px;
+	margin-left: 200px;
+	margin-top: 78px;
 }
 .site-navigation a,
 .header-cart a{
@@ -61,19 +58,26 @@ ul{
 .current{
 	border-bottom: 2px solid #e74246;
 }
+.main-header-logo{
+	width: 160px;
+	height: 65px;
+	margin-left: 20px;
+	margin-top: 50px;
+}
 .header-cart{
-	background: url(../img/cart-icon.svg) no-repeat 0 3px;
-	display: inline-block;
-	vertical-align: top;
+	background: url(../img/cart-icon.svg) no-repeat 0 4px;
 	padding-left: 39px;
-	margin: 79px 0 0 240px;
+	margin-left: 247px;
+	margin-top: 78px;
 }
 .carousel {
+	width: 1200px;
 	height: 423px;
 	margin: 0 auto;
 	position: relative;
 	width: 1200px;
 	padding-left: 20px;
+	padding-top: 5px;
 }
 
 .slider {
@@ -329,43 +333,59 @@ hr{
 	font-size: 25px;
 }
 .partners{
-	list-style: none;
-	text-align: center;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	position: relative;
-	margin: 10px 0 35px 0;
+	list-style: none;
 }
-
 .partners li{
-	display: inline-block;
-	vertical-align: top;
-	margin-left: -70px;
-	padding: 40px 0 0 0;
 	position: relative;
+	margin-bottom: 20px;
 }
-
+.partners li:first-child{
+	margin-top: 46px;
+	margin-left: 10px;
+}
+.partners li:nth-child(2){
+	margin-left: 99px;
+	margin-top: 30px;
+}
+.partners li:nth-child(3){
+	margin-left: 101px;
+	margin-top: 50px;
+}
+.partners li:last-child{
+	margin-left: 120px;
+	margin-top: 35px;
+}
 .partners .line-1{
 	border-right: 2px solid #eeeeee;
 	height: 50px;
 	position: absolute;
-	top: 50px;
+	top: 20px;
 	left: -50px;
 }
 .partners .line-2{
 	border-right: 2px solid #eeeeee;
 	height: 50px;
 	position: absolute;
-	top: 30px;
+	top: 0px;
 	left: -59px;
 }
 .partners .line-3{
 	border-right: 2px solid #eeeeee;
 	height: 50px;
 	position: absolute;
-	top: 50px;
-	left: -42px;
+	top: 10px;
+	left: -64px;
+}
+.partners a{
+	opacity: 0.2;	
+}
+.partners a:hover,
+.partners a:focus{
+	opacity: 1;	
+}
+.partners a:active{
+	opacity: 0.1;	
 }
 .partners a{
 	opacity: 0.2;	
@@ -381,7 +401,6 @@ hr{
 	background: url(../img/contacts.jpg);
 	background-size: cover;
 	height: 386px;
-	
 	padding-top: 30px; 
 	min-width: 1250px;
 }
@@ -393,7 +412,6 @@ hr{
 	padding-left: 50px;
 	margin-left: 20px;
 	margin-top: 26px;
-	z-index: 1;
 }
 .contacts-card h3{
 	text-transform: uppercase;
@@ -413,20 +431,18 @@ hr{
 	vertical-align: top;
 	padding: 13px 45px;
 }
-/* Конец стилизации раздела контакты */
-/* Стилизуем футер сайта */
 .main-footer{
 	width: 1200px;
-	height: 140px;
-	margin: 0 auto;
+	height: 217px;
+	margin: auto;
+	display: flex;
 }
 .footer-social ul{
 	margin: 70px 0 0 -16px;
-
+	display: flex;
+	list-style: none;
 }
 .footer-social li{
-	display: inline-block;
-	vertical-align: top;
 	width: 79px;
 	height: 79px;
 	background-color: #e1e1e1;
@@ -473,12 +489,12 @@ hr{
 	color: black;
 }
 /*    Стилизуем раздел каталог    */
-.header__title{
+.header-title{
 	text-align: center;
 	font-size: 55px;
 	font-weight: 500;
-	margin: 0;
-	padding: 85px 0 124px 0;
+	margin: auto;
+	padding: 90px 0 124px 0;
 }
 .filter{
 	display: inline-block;
@@ -492,13 +508,13 @@ hr{
 }
 .catalog-list{
 	list-style: none;
-	margin: 0;
-	padding: 0 0 0 40px;
-	word-spacing: 36px;
-	margin-top: 36px;
+	margin: 36px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .catalog-item{
-	display: inline-block;
+	width: 360px;
 	position: relative;
 	margin: 0 0 26px 0;
 }
@@ -760,7 +776,7 @@ input[type=range]::-ms-thumb{
 	box-shadow: 0 10px 40px 0px #888888;
 	background-color: #ffffff;
 	z-index: 100;
-	margin: 0 auto;
+	margin: auto;
 	position: relative;
 	display: none;
 	position: fixed;
@@ -768,16 +784,14 @@ input[type=range]::-ms-thumb{
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-
 }
 .active{
 	display: block;
 	animation: mymove .3s;
 }
 @keyframes mymove {
-    0%   {top: -500px;}
-    50% {top: 200px;}
-    100% {top: 0px;}
+    0%   {top: -2500px;}
+    100% {top: 0px;}    
 }
 .modal-close{
 	background: url(../img/close-cross.svg) no-repeat;
