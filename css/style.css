@@ -559,20 +559,27 @@ hr{
 	transform: scale(1);
 }
 /* Стилизуем фильтр */
+.filter-servises{
+	display: flex;
+	flex-direction: column;
+	margin-top: 25px;
+}
+.filter-grid{
+	margin-top: 50px;
+	padding-top: 15px;
+}
 .filter{
 	padding-left: 7px
 }
-legend{
+.filter-servises legend{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 18px;
-	padding-top: 25px;
 }
-fieldset{
+.filter-servises fieldset{
 	border: none;
-	margin-top: 32px;
 }
-label{
+.filter-servises label{
 	display: block;
 	margin-bottom: 10px;
 	cursor: pointer;
@@ -613,6 +620,9 @@ label span{
 	opacity: 0.9;
 }
 /* Стилизуем чекбоксы */
+.filter-features{
+	padding-top: 15px;
+}
 input[type="checkbox"]{
 	display: none;
 }
@@ -643,8 +653,11 @@ input:checked + .checkbox:before{
 	color: black;
 }
 .button-grey{
-	padding: 15px 90px;
+	margin-top: 15px;
+	margin-left: 10px;
+	padding: 14px 90px;
 	font-weight: 500;
+	width: 80px;
 }
 .button-grey:hover,
 .button-grey:focus{
@@ -731,44 +744,111 @@ input:checked + .checkbox:before{
 	opacity: 1;
 }
 /* Стилизуем ползунок */
-.filter-slider{
-	text-transform: uppercase;
-}
-.filter-slider input{
-	width: 260px;
-	height: 80px;
-	background-color: #eeeeee;
-	margin: 45px 0 22px 0;
-}
-.filter-slider output{
-	background-color: #eeeeee;
-	padding: 10px 35px;
-	border-radius: 3px;
-	margin: 0 30px 0 10px;
-}
-.filter-slider output~output{
-	background-color: #eeeeee;
-	padding: 10px 20px;
-	margin: 0 10px;
-}
-input[type=range],
-input[type=range]::-moz-range-track,
-input[type="range"]::-ms-track {    /*Стилизуем полосу прокрутки*/
-    -webkit-appearance: none;
-    height: 1px;
-    border: 1px solid #00ca74;
-    background-color: #00ca74;
-}
-input[type='range']::-webkit-slider-thumb,
-input[type=range]::-moz-range-thumb,
-input[type=range]::-ms-thumb{
-	-webkit-appearance: none;
-	background: url(../img/filter-button.svg) no-repeat;
-	width: 25px;
-	height: 25px;
-	cursor: pointer;
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  
+  border: none;
+  
+  /* Для демонстрации */
+  width: 260px;
+  margin: 35px 0 0 15px; 
 }
 
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 10px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
 /* Стилизуем попап */
 .write-us-hidden{
 	width: 960px;

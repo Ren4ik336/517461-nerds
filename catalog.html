@@ -29,13 +29,22 @@
 			<h2 class="visually-hidden">Фильтр услуг</h2>
 			<!-- Здесь будет форма --> 
 			<form class="filter-servises" method="post">
-				<fieldset class="filter-slider">
-					<legend>Стоимость:</legend>
-					<input type="range" min="0" max="15000" step="1" value="0">
-					<div id="slider-range"></div>
-					<span>от</span><output for="range" name="range-1" id="value-1">0</output>
-					<span>до</span><output for="range" name="range-2" id="value-2">15000</output>
-				</fieldset>
+				<fieldset class="filter-item">
+			        <legend>Стоимость:</legend>
+			        <div class="range-filter">
+			          <div class="range-controls">
+			            <div class="scale">
+			              <div class="bar"></div>
+			            </div>
+			            <div class="toggle toggle-min"></div>
+			            <div class="toggle toggle-max"></div>
+			          </div>
+			          <div class="price-controls">
+			            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+			            <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+			          </div>
+			        </div>
+			    </fieldset>
 				<fieldset class="filter-grid">
 					<legend>Сетка:</legend>
 					
@@ -46,7 +55,7 @@
 					<i class="radio" tabindex="0"></i><span>Фиксировнная<br>Резиновая</span></label>
 					<br>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-features">
 					<legend class="filter-properties">Особенности:</legend>
 					<label for="filter-slider"><input type="checkbox" name="slider" id="filter-slider" checked tabindex="0"><i class="checkbox"></i>
 					<span>Слайдер</span></label>
@@ -62,8 +71,9 @@
 
 					<label for="filter-basket"><input type="checkbox" name="basket" id="filter-basket" tabindex="0"><i class="checkbox"></i><span>Корзина</span></label>
 				</fieldset>
+				<a href="#" class="button button-grey">Показать</a>
 			</form>
-			<a href="#" class="button button-grey">Показать</a>
+			
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Каталог сайтов, приложений и призентаций.</h2>
