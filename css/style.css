@@ -571,15 +571,15 @@ hr{
 .filter{
 	padding-left: 7px
 }
-.filter-servises legend{
+legend{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 18px;
 }
-.filter-servises fieldset{
+fieldset{
 	border: none;
 }
-.filter-servises label{
+label{
 	display: block;
 	margin-bottom: 10px;
 	cursor: pointer;
