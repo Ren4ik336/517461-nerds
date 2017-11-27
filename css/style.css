@@ -1,9 +1,8 @@
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', 'Arial', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-	/* background: url(../img/nerds-index.jpg); */
 }
 a{
 	text-decoration: none;
