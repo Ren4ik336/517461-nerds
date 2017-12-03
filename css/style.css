@@ -399,6 +399,10 @@ hr~hr{
 .partners a:active{
 	opacity: 0.1;
 }
+iframe{
+	width: 100%;
+	height: 416px;
+}
 .contacts{
 	min-width: 1250px;
 	background: url(../img/contacts.jpg) no-repeat;
