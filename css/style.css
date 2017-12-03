@@ -254,6 +254,9 @@ hr{
 	margin: 0;
 	padding: 0;
 }
+hr~hr{
+	margin-bottom: 80px;
+}
 .studio{
 	display: flex;
 	width: 1180px;
@@ -332,7 +335,7 @@ hr{
 .partners{
 	display: flex;
 	list-style: none;
-	margin-bottom: 100px;
+	margin-bottom: 18px;
 }
 .partners li{
 	position: relative;
@@ -395,12 +398,22 @@ hr{
 .partners a:active{
 	opacity: 0.1;	
 }
+.contacts-container{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+.frame{
+	position: relative;
+}
 .contacts{
-	background: url(../img/contacts.jpg);
 	background-size: cover;
 	height: 386px;
 	padding-top: 30px; 
-	min-width: 1250px;
+}
+iframe{
 }
 .contacts-card{
 	background-color: #ffffff;
@@ -410,6 +423,11 @@ hr{
 	padding-left: 50px;
 	margin-left: 20px;
 	margin-top: 26px;
+	position: absolute;
+
+	top: 0px;
+	left: 0px;
+	
 }
 .contacts-card h3{
 	text-transform: uppercase;
