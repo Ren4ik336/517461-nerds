@@ -333,7 +333,7 @@ a{
 	margin: 40px 0 0 0;
 }
 .progress-table{
-	margin: 245px 0 0 0;
+	margin: 245px 0 0 -2px;
 }
 .progress-table caption{
 	text-align: left;
@@ -349,23 +349,32 @@ a{
 	height: 70px;
 }
 .percent{
-	width: 100px;
+	width: 110px;
 }
 .title{
-	width: 120px;
+	width: 110px;
 }
 .percent sup{
 	font-size: 27px;
 }
+.percent:first-of-type{
+	padding-left: 0px;
+}
+.percent:nth-of-type(2){
+	padding-left: 4px;
+}
 .percent:last-of-type{
-	padding-left: 5px;
+	padding-left: 7px;
 }
 .progress-table .title{
 	line-height: 18px;
 	padding-top: 5px;
 }
+.title:nth-of-type(2){
+	padding-left: 4px;
+}
 .title:last-of-type{
-	padding-left: 5px;
+	padding-left: 8px;
 }
 .hr{
 	border: 1px solid #eeeeee;
