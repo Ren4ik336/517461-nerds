@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/style.css">
 <title>Магазин</title>
 </head>
 <body>
@@ -52,8 +52,9 @@
 				<i class="radio"></i><span>Адаптивная</span></label>
 
 				<label for="filter-grid-2"><input type="radio" name="grid" id="filter-grid-2">
-				<i class="radio"></i><span>Фиксировнная<br>Резиновая</span></label>
-				<br>
+				<i class="radio"></i><span>Фиксировнная</span></label>
+				<label for="filter-grid-3"><input type="radio" name="grid" id="filter-grid-3">
+				<i class="radio"></i><span>Резиновая</span></label>
 			</fieldset>
 			<fieldset class="filter-features">
 				<legend class="filter-properties">Особенности:</legend>
@@ -71,7 +72,7 @@
 
 				<label for="filter-basket"><input type="checkbox" name="basket" id="filter-basket"><i class="checkbox"></i><span>Корзина</span></label>
 			</fieldset>
-			<a href="#" class="button button-grey">Показать</a>
+			<input type="submit" value="Показать" class="button button-grey" >
 		</form>
 		
 	</section>
@@ -99,8 +100,8 @@
 				</a>
 					<div class="item-info">
 						<h3>Sedona</h3>
-						<p>Информационный сайт<br>для туристов</p>
-					<input type="button" value="9 900 руб." class="button button-buy">
+						<p>Информационный сайт для туристов</p>
+					<a href="#" class="button button-buy">9 900 руб.</a>
 					</div>
 					
 			</li>
@@ -111,8 +112,8 @@
 				</a>
 					<div class="item-info">
 						<h3>Pink App</h3>
-						<p>Продуктовый лендинг<br>приложения для IOS и Android</p>
-						<input type="button" value="9 900 руб." class="button button-buy">
+						<p>Продуктовый лендинг приложения для IOS и Android</p>
+						<a href="#" class="button button-buy">9 900 руб.</a>
 					</div>
 			</li>
 			<li class="catalog-item">
@@ -122,8 +123,8 @@
 				</a>
 					<div class="item-info">
 						<h3>Barbershop</h3>
-						<p>Сайт салон красоты.<br>Для мужчин, да.</p>
-						<input type="button" value="9 900 руб." class="button button-buy">
+						<p>Сайт салон красоты. Для мужчин, да.</p>
+						<a href="#" class="button button-buy">9 900 руб.</a>
 					</div>
 			</li>
 			<li class="catalog-item">
@@ -133,8 +134,8 @@
 				</a>
 					<div class="item-info">
 						<h3>Mishka</h3>
-						<p>Интернет магазин<br>вязаных игрушек.</p>
-						<input type="button" value="9 900 руб." class="button button-buy">
+						<p>Интернет магазин вязаных игрушек.</p>
+						<a href="#" class="button button-buy">9 900 руб.</a>
 					</div>
 			</li>
 			<li class="catalog-item">
@@ -144,8 +145,8 @@
 				</a>
 					<div class="item-info">
 						<h3>A Plus</h3>
-						<p>Лендинг повышения курсов<br>квалификации.</p>
-						<input type="button" value="9 900 руб." class="button button-buy">
+						<p>Лендинг повышения курсов квалификации.</p>
+						<a href="#" class="button button-buy">9 900 руб.</a>
 					</div>
 			</li>
 			<li class="catalog-item">
@@ -155,8 +156,8 @@
 				</a>
 					<div class="item-info">
 						<h3>Кваст</h3>
-						<p>Промо-сайт производителя<br>крафтового кваса.</p>
-						<input type="button" value="9 900 руб." class="button button-buy">
+						<p>Промо-сайт производителя крафтового кваса.</p>
+						<a href="#" class="button button-buy">9 900 руб.</a>
 					</div>
 			</li>
 		</ul>
@@ -195,15 +196,15 @@
 	<section class="write-us-hidden" id="modal">
 		<h3>Напишите нам</h3>
 		<a><span class="modal-close"></span></a>
-		<form class="form-write-us">
-			<p><label for="name">Ваше имя:</label>
-			<input type="text" id="name" class="write-name" name="name" placeholder="Представтесь, пожалуйста"></p>
-			<p><label for="email">Ваш e-mail:</label>
-			<input type="text" id="email" class="write-email" name="email" placeholder="Для отправки ответа"></p>
-			<label for="message">Текст письма:</label>
-			<textarea name="message" id="message" class="write-message" cols="30" rows="10">В свободной форме</textarea>
-			<a href="email.html" class="button button-submit">Отправить</a>
-		</form>
+		<form class="form-write-us" method="post">
+		<p><label for="name">Ваше имя:</label>
+		<input type="text" id="name" class="write-name" name="name" placeholder="Представтесь, пожалуйста" required></p>
+		<p><label for="email">Ваш e-mail:</label>
+		<input type="text" id="email" class="write-email" name="email" placeholder="Для отправки ответа" required></p>
+		<label for="message">Текст письма:</label>
+		<textarea name="message" id="message" class="write-message" cols="30" rows="10" required>В свободной форме</textarea>
+		<input type="submit" value="Отправить" class="button-submit">
+	</form>
 	</section>
 </div>
 <script src="js/script.min.js"></script>
