@@ -473,6 +473,7 @@ a{
 .contacts{
 	min-width: 1200px;
 	background: url(../img/contacts.jpg) no-repeat;
+	background-color: #eeeeee;
 	background-size: cover;
 	max-height: 416px;
 	position: relative;
