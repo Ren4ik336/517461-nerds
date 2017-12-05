@@ -210,6 +210,7 @@ a{
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	width: 1100px;
+	margin-bottom: 80px;
 }
 .box{
 	width: 300px;
@@ -366,13 +367,13 @@ a{
 .title:last-of-type{
 	padding-left: 5px;
 }
-hr{
+.hr{
 	border: 1px solid #eeeeee;
 	width: 1160px;
 	margin: 0;
 	padding: 0;
 }
-hr~hr{
+.hr~.hr{
 	margin-bottom: 80px;
 }
 .partners{
@@ -402,25 +403,34 @@ hr~hr{
 	margin-left: 120px;
 	margin-top: 35px;
 }
-.partners .line-1{
-	border-right: 2px solid #eeeeee;
+.partners li:nth-child(2):before{
+	display: inline-block;
+	content: "";
+	width: 2px;
 	height: 50px;
+	background-color: #eeeeee;
 	position: absolute;
 	top: 20px;
 	left: -50px;
 }
-.partners .line-2{
-	border-right: 2px solid #eeeeee;
+.partners li:nth-child(3):before{
+	display: inline-block;
+	content: "";
+	width: 2px;
 	height: 50px;
+	background-color: #eeeeee;
 	position: absolute;
 	top: 0px;
 	left: -59px;
 }
-.partners .line-3{
-	border-right: 2px solid #eeeeee;
+.partners li:nth-child(4):before{
+	display: inline-block;
+	content: "";
+	width: 2px;
 	height: 50px;
+	background-color: #eeeeee;
 	position: absolute;
-	top: 10px;
+	top: 15px;
 	left: -64px;
 }
 .partners a{
@@ -884,7 +894,7 @@ hr~hr{
 	display: -ms-flexbox;
 	display: flex;
 }
-.sorting-wrapper{
+/* .sorting-wrapper{
 	width: 360px;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -898,7 +908,7 @@ hr~hr{
 	        justify-content: space-between;
 	margin-left: 265px;
 	margin-top: 55px;
-}
+} */
 .sorting-title{
 	text-transform: uppercase;
 	font-size: 18px;
@@ -915,7 +925,7 @@ hr~hr{
 	display: -ms-flexbox;
 	display: flex;
 }
-.sorting ul{
+.sorting-items{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -923,12 +933,9 @@ hr~hr{
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-.sorting-items{
 	width: 270px;
 	padding: 0;
+	margin: 56px 0 0 268px;
 }
 .sorting a{
 	text-transform: uppercase;
@@ -945,21 +952,24 @@ hr~hr{
 	opacity: 1;
 }
 .sorting-buttons{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
 	width: 40px;
 	padding: 0;
-	margin: 0;
+	margin: 56px 0 0 47px;
 }
 .sorting-buttons .button-down{
 	display: inline-block;
 	content: "";
-	background: url(../img/icon-down-dir.svg) no-repeat;
+	background: url(../img/icon-up-dir.svg) no-repeat;
 	width: 11px;
 	height: 10px;
 }
 .sorting-buttons .button-up{
 	display: inline-block;
 	content: "";
-	background: url(../img/icon-up-dir.svg) no-repeat;
+	background: url(../img/icon-down-dir.svg) no-repeat;
 	width: 11px;
 	height: 10px;
 }
@@ -985,6 +995,19 @@ hr~hr{
 	width: 360px;
 	position: relative;
 	margin: 0 0 26px 0;
+}
+.catalog-item::before{
+	display: inline-block;
+	content: "";
+	background: url(../img/browser.svg) no-repeat;
+	height: 40px;
+	width: 360px;
+	opacity: 0.3;
+	margin-bottom: -8px;
+	padding: 0;
+}
+.catalog-item:hover:before{
+	opacity: 1;
 }
 .catalog-item-decoration{
 	background: url(../img/browser.svg) no-repeat;
@@ -1013,7 +1036,7 @@ hr~hr{
 	width: 360px;
 	text-align: center;
 	position: absolute;
-	bottom: 0;
+	bottom: 8px;
 	left: 0;
 	-webkit-transform: scale(0);
 	        transform: scale(0);
