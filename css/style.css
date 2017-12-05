@@ -647,6 +647,18 @@ a{
 	color: rgba(0, 0, 0, 0.5);
 	padding-left: 10px;
 }
+.form-write-us input:hover
+{
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.form-write-us input:focus{
+	border: 2px solid rgba(0, 0, 0, 1);
+	outline: none;
+}
+.form-write-us input:invalid{
+	border: 2px solid red;
+	color: red;
+}
 .form-write-us p{
 	display: inline-block;
 	vertical-align: top;
@@ -663,6 +675,13 @@ a{
 	color: rgba(68, 68, 68, 0.5);
 	padding: 10px 0 0 10px;
 	margin: 0 0 50px 0;
+}
+.form-write-us textarea:hover{
+	border: 2px solid rgba(0, 0, 0, 0.5);
+}
+.form-write-us textarea:focus{
+	border: 2px solid rgba(0, 0, 0, 1);
+	outline: none;
 }
 .write-us-hidden .button-submit{
 	font-family: 'Roboto', 'Verdana', sans-serif;
@@ -805,11 +824,16 @@ a{
 }
 .filter-grid label{
 	display: block;
-	margin-top: 18px;
-	cursor: pointer;
-}
-.filter-grid label{
 	margin-top: 10px;
+	cursor: pointer;
+	opacity: 0.4;
+}
+.filter-grid label:hover,
+.filter-grid label:focus{
+	opacity: 1;
+}
+.filter-grid label:active{
+	opacity: 0.1;
 }
 .filter input[type="radio"]{
 	display: none;
@@ -820,11 +844,6 @@ a{
 	width: 25px;
 	height: 25px;
 	position: absolute;
-	opacity: 0.6;
-}
-.radio:hover,
-.radio:focus{
-	opacity: 1;
 }
 .radio:before{
 	content: '';
@@ -842,11 +861,10 @@ a{
 .filter span{
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 40px;
+	margin-left: 36px;
 	color: #283136;
 	font-size: 16px;
 	line-height: 1.9;
-	opacity: 0.9;
 }
 .filter-features {
 	margin: 0;
@@ -860,6 +878,14 @@ a{
 	display: block;
 	margin-bottom: 10px;
 	cursor: pointer;
+	opacity: 0.4;
+}
+.filter-features label:hover,
+.filter-features label:focus{
+	opacity: 1;
+}
+.filter-features label:active{
+	opacity: 0.1;
 }
 .filter input[type="checkbox"]{
 	display: none;
@@ -869,11 +895,7 @@ a{
 	width: 25px;
 	height: 25px;
 	position: absolute;
-	opacity: 0.6;
 	cursor: pointer;
-}
-.checkbox:hover{
-	opacity: 1;
 }
 .checkbox:before{
 	content: '';
@@ -949,6 +971,12 @@ a{
 	color: black;
 	font-size: 14px;
 	opacity: 0.3;
+}
+.sorting .active-point{
+	opacity: 1;
+}
+.sorting-buttons .button-up-active{
+	opacity: 1;
 }
 .sorting a:hover,
 .sorting a:focus{
