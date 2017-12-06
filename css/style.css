@@ -201,6 +201,8 @@ a{
 }
 .advantages{
 	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom: 2px solid #eeeeee;
 }
 .flex-box{
 	display: -webkit-box;
@@ -278,13 +280,6 @@ a{
 .button-order-yellow:active{
 	background-color: #e5a722;
 	color: rgba(255, 255, 255, 0.3);
-}
-.advantages hr{
-	border: 1px solid #eeeeee;
-	width: 1160px;
-	margin: 0;
-	padding: 0;
-	margin: 92px 0 0 0;
 }
 .studio{
 	display: -webkit-box;
@@ -380,41 +375,35 @@ a{
 .title:last-of-type{
 	padding-left: 8px;
 }
-.hr{
-	border: 1px solid #eeeeee;
-	width: 1160px;
-	margin-left: 20px;
-	padding: 0;
-}
-.hr~.hr{
-	margin-bottom: 80px;
-}
 .partners{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
-	margin-bottom: 16px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	padding: 20px 20px 16px 20px;
+	margin: 0 20px 82px 20px;
 }
 .partners li{
 	position: relative;
 	margin-bottom: 20px;
 }
 .partners li:first-child{
-	margin-top: 47px;
+	margin-top: 43px;
 	margin-left: 11px;
 }
 .partners li:nth-child(2){
 	margin-left: 96px;
-	margin-top: 33px;
+	margin-top: 30px;
 }
 .partners li:nth-child(3){
 	margin-left: 103px;
-	margin-top: 50px;
+	margin-top: 46px;
 }
 .partners li:last-child{
 	margin-left: 121px;
-	margin-top: 37px;
+	margin-top: 33px;
 }
 .partners li:nth-child(2):before{
 	display: inline-block;
