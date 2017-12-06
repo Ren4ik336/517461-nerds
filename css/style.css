@@ -32,6 +32,7 @@ a{
 	    flex-wrap: wrap;
 	width: 1200px;
 	margin: auto;
+	justify-content: space-between;
 }
 .main-header-logo{
 	width: 160px;
@@ -51,15 +52,17 @@ a{
 	        flex-direction: row;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: center;
-	min-width: 885px;
+	        justify-content: center;/*Можно было бы поменять на flex-start решили оставить этот вариант*/
+	max-width: 825px;
 	margin-top: 78px;
-	padding: 0;
+	margin-bottom: 0;
+	padding: 0 30px;
 	font-weight: 500;
 	list-style: none;
 }
 .site-navigation li{
 	padding-right: 45px;
+	margin-bottom: 16px;
 }
 .site-navigation a,
 .header-cart a{
@@ -84,6 +87,7 @@ a{
 	background: url(../img/cart-icon.svg) no-repeat 0 3px;
 	margin: 79px 0 0 0;
 	padding-left: 40px;
+	margin-right: 20px;
 }
 .carousel {
 	height: 423px;
